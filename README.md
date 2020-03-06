@@ -1,8 +1,10 @@
 # Full-stack self-driving car perception
 This self driving car uses the Inference Engine included in the Intel® Distribution of OpenVINO™ toolkit and the Intel® Deep Learning Deployment Toolkit. It is designed for a car mounted camera system that detects the driving lane and other vehicle along the road. It is intended to provide real-time car perception, mainly localization, to the self-driving car control system.
 ## Check the Input and Output video
-* Input: Resources/project_video.mp4
-* Output: results/demo/road.mp4
+* Input: Resources/[project\_video.mp4](https://github.com/Aya-ZIbra/car-perception/blob/master/Resources/project_video.mp4)
+* Output: results/demo/[road.mp4](https://github.com/Aya-ZIbra/car-perception/blob/master/results/demo/road.mp4)
+Check the output vidoe on youtube: https://youtu.be/LpsaYcHkjP4
+
 ## Overview of how it works
 At start-up the sample application reads the equivalent of command line arguments and loads a network and image from the video input to the Inference Engine (IE) plugin. A job is submitted to an edge compute node with a hardware accelerator such as Intel® HD Graphics GPU, Intel® Movidius™ Neural Compute Stick 2 and Intel® Arria® 10 FPGA. After the inference is completed, the output videos are appropriately stored in the /results/[device] directory, which can then be viewed within the Jupyter Notebook instance.
 
