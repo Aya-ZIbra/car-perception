@@ -74,3 +74,17 @@ Based on the road marks detected by road segmenation model, an image processing 
 
 #### Visualization
 Visualizing the road mask, the vehicles' bounding boxes and detected lane lines.
+
+## Performance Assessment
+### 1. Number of inference requests
+We submit jobs with different number of inference requests to an IEI Tank* 870-Q170 edge node with an Intel® Core™ i5-6500TE processor. The inference workload will run on the CPU.
+Figure below shows a plot the results of all jobs with different number of inference requests running in parallel. Lower values mean better performance for Inference Engine Processing Time.
+
+![](https://github.com/Aya-ZIbra/car-perception/blob/master/Resources/Num_Infer_Req.JPG?raw=true)
+
+### 2. Different EDGE compute nodes
+Figures belows shows a plot the results of all jobs on different architectures side-by-side. Lower values mean better performance for Inference Engine Processing Time . Keep in mind that some architectures are optimized for the highest performance, others for low power or other metrics.
+
+![](https://github.com/Aya-ZIbra/car-perception/blob/master/Resources/Arch1.JPG?raw=true)
+
+![](https://github.com/Aya-ZIbra/car-perception/blob/master/Resources/Arch2.JPG?raw=true)
